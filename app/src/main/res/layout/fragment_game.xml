@@ -52,8 +52,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tv_question"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_sum"
+        app:layout_constraintVertical_bias="0.357"
         tools:text="7" />
 
     <TextView
@@ -84,11 +86,11 @@
         android:background="@color/normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.007"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_left_number"
-        app:layout_constraintVertical_bias="0.769"
+        app:layout_constraintVertical_bias="0.77"
         tools:text="1" />
 
     <TextView
@@ -99,12 +101,11 @@
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
         android:background="@color/easy"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_option_1"
         app:layout_constraintEnd_toStartOf="@+id/tv_option_3"
-        app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toEndOf="@+id/tv_option_1"
-        app:layout_constraintTop_toBottomOf="@+id/tv_sum"
-        app:layout_constraintVertical_bias="0.69"
+        app:layout_constraintTop_toTopOf="@+id/tv_option_1"
+        app:layout_constraintVertical_bias="0.406"
         tools:text="2" />
 
     <TextView
@@ -119,7 +120,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/tv_option_2"
         app:layout_constraintTop_toTopOf="@+id/tv_left_number"
-        app:layout_constraintVertical_bias="0.764"
+        app:layout_constraintVertical_bias="0.77"
         tools:text="3" />
 
     <TextView
@@ -127,15 +128,12 @@
         style="@style/OptionTextStyle"
         android:layout_width="130dp"
         android:layout_height="80dp"
-        android:layout_marginStart="3dp"
         android:layout_marginTop="3dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="3dp"
         android:background="@color/hard"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tv_option_5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_option_1"
+        app:layout_constraintEnd_toEndOf="@+id/tv_option_1"
+        app:layout_constraintStart_toStartOf="@+id/tv_option_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_option_2"
         tools:text="4" />
 
     <TextView
@@ -143,14 +141,13 @@
         style="@style/OptionTextStyle"
         android:layout_width="130dp"
         android:layout_height="80dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
-        android:layout_marginBottom="3dp"
         android:background="@color/orange"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tv_option_6"
-        app:layout_constraintStart_toEndOf="@+id/tv_option_4"
-        app:layout_constraintTop_toBottomOf="@+id/tv_option_2"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_option_4"
+        app:layout_constraintEnd_toEndOf="@+id/tv_option_2"
+        app:layout_constraintStart_toStartOf="@+id/tv_option_2"
+        app:layout_constraintTop_toTopOf="@+id/tv_option_4"
         tools:text="5" />
 
     <TextView
@@ -158,15 +155,13 @@
         style="@style/OptionTextStyle"
         android:layout_width="130dp"
         android:layout_height="80dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="3dp"
         android:background="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toEndOf="@+id/tv_option_5"
-        app:layout_constraintTop_toBottomOf="@+id/tv_option_3"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_option_5"
+        app:layout_constraintEnd_toEndOf="@+id/tv_option_3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_option_3"
+        app:layout_constraintTop_toTopOf="@+id/tv_option_5"
+        app:layout_constraintVertical_bias="0.0"
         tools:text="6" />
 
     <TextView
