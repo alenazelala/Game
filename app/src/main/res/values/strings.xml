@@ -2,4 +2,7 @@
     <string name="app_name">Game</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="progress_amswers">Правильных ответов %s (минимум %s)</string>
+    <string name="winner">"ПОБЕДА!!!"</string>
+    <string name="loser">"ВЫ ПРОИГРАЛИ"</string>
 </resources>

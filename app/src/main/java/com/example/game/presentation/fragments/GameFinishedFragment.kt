@@ -31,15 +31,17 @@ class GameFinishedFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        bindViews()
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner,
             object: OnBackPressedCallback(true){
             override fun handleOnBackPressed() {
                 retryGame()
             }
 
+
         })
         binding.retryBtn.setOnClickListener {
-            launchChooseLevelFragment()
+            retryGame()
         }
     }
 
@@ -47,6 +49,27 @@ class GameFinishedFragment : Fragment() {
         gameResult = requireArguments().getSerializable(KEY_GAME_RESULT) as GameResult
     }
 
+    private fun bindViews(){
+        with(binding){
+            emajiResult.setImageResource(getSmileResId())
+            requiredAnswers.text = getString(getResultTitle())
+        }
+    }
+
+    private fun getSmileResId(): Int{
+        return if(gameResult.winner){
+            R.drawable.finish_s
+        } else{
+            R.drawable.loser
+        }
+    }
+    private fun getResultTitle(): Int{
+        return if(gameResult.winner){
+            R.string.winner
+        }else{
+            R.string.loser
+        }
+    }
     private fun retryGame(){
         requireActivity().supportFragmentManager.popBackStack(GameFragment.NAME,
             FragmentManager.POP_BACK_STACK_INCLUSIVE)
@@ -60,11 +83,5 @@ class GameFinishedFragment : Fragment() {
             }
         }
     }}
-    private fun launchChooseLevelFragment() {
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.main_container, ChooseLevelFragment.newInstance())
-            .addToBackStack(ChooseLevelFragment.NAME)
-            .commit()
 
-    }
 }

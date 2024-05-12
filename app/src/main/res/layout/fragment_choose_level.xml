@@ -26,6 +26,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:text="ТЕСТОВЫЙ"
+        android:visibility="gone"
         app:cornerRadius="0dp"/>
 
     <Button
